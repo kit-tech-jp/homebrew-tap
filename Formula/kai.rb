@@ -2,6 +2,8 @@
 # Update version, URLs, and sha256 values when releasing a new version.
 # Requires HOMEBREW_GITHUB_API_TOKEN for private repository access.
 
+require "download_strategy"
+
 class Kai < Formula
   desc "Local AI development assistant environment centered around Claude Code"
   homepage "https://github.com/kit-tech-jp/kit-ai"
