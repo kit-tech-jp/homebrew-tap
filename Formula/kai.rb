@@ -14,11 +14,11 @@ class Kai < Formula
     if Hardware::CPU.arm?
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-arm64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "aa78adf566c89b9592c68c5eb78e4dc3463f6e00ad30194bb1ab73dec9b8d369"
+      sha256 "1e13c53abbc8802166eb4344d1087b62893b6982d72342ecfb4e0cd63a8218e3"
     else
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-x64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "ca0fd0538c0c4f28cf8307818d159c0f23132dd14188435759520a8056375ed3"
+      sha256 "ebd7709041f58488288022e2057ec85e1e55bff126b18eef613ae0ac59994281"
     end
   end
 
@@ -26,11 +26,11 @@ class Kai < Formula
     if Hardware::CPU.arm?
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-linux-arm64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "abb59d3c16742d13b262deb2a58caf6f1756e53e875d5cb6b20345d56f8f9527"
+      sha256 "c13c7b434127d5adf9690a0976a7c9c48dcb89ed1955e8af070e8757a7ce6e3d"
     else
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-linux-x64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "5e44be5c91d97995dfb457beb7d01af2c2d2b92687b3e99ce9c1b9cde88de871"
+      sha256 "aa78adf566c89b9592c68c5eb78e4dc3463f6e00ad30194bb1ab73dec9b8d369"
     end
   end
 
