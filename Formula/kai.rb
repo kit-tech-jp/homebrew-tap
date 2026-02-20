@@ -4,13 +4,13 @@
 class Kai < Formula
   desc "Local AI development assistant environment centered around Claude Code"
   homepage "https://github.com/kit-tech-jp/kit-ai"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-arm64"
-      sha256 "36a40d5d5a0e42709204416f8550b5b8803178cce714dff4a2c24344f18db262"
+      sha256 "b5a66a490e7952607861b077c6b15adcf693e12466d1b004127c8e14b6a236a5"
     else
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-x64"
       sha256 "ca0fd0538c0c4f28cf8307818d159c0f23132dd14188435759520a8056375ed3"
