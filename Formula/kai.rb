@@ -14,7 +14,7 @@ class Kai < Formula
     if Hardware::CPU.arm?
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-arm64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d627d04d3b9fcef2b260dd5329d8b98f56106d2a42dafad18c10bb62c1d12d69"
+      sha256 "727f2be1b9f617b2084ac0d30b34ab98502712ff0a517977f1a260f661da7d0a"
     else
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-x64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
