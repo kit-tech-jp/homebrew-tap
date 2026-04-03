@@ -7,18 +7,18 @@ require_relative "lib/private_strategy"
 class Kai < Formula
   desc "Local AI development assistant environment centered around Claude Code"
   homepage "https://github.com/kit-tech-jp/kit-ai"
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-arm64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "451f976711a72e43ffe7a31c5f53ea8c9fd29f8158251cf7e6f67645579e4fd2"
+      sha256 "86034ccd5430f74325de43ef430dc50120da90523872797d01549b8f9ac70d52"
     else
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-darwin-x64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "7b0ec6f56a9f4e2dd8facab77b7514bff63b2d4832be0308a1cf056d962742c9"
+      sha256 "e69fb353e655159a49118cfbc451a0f6608aef17c511aa6d277a3160c73dea57"
     end
   end
 
@@ -26,11 +26,11 @@ class Kai < Formula
     if Hardware::CPU.arm?
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-linux-arm64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4f4598e6a0bc24102da8a67da82440f01ad7e8460f9b70eaae8bbf35a52dd448"
+      sha256 "c394afdac1e0e8fa532b2282516b6abdb416cd96aa61710f3d1a2b9f59309cb2"
     else
       url "https://github.com/kit-tech-jp/kit-ai/releases/download/v#{version}/kai-linux-x64",
           using: ::GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "eb158b2b39e131e12903eb9954748bce5aac6bf7f0fb4aa4b17fcbca5846d739"
+      sha256 "aaaffee0e3ac121dd29b93736537af683c2ebb9d34f8394fcdb7dd507835a273"
     end
   end
 
